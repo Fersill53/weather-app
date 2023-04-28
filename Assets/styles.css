@@ -38,7 +38,7 @@
 #wthrCont #wthrRes {
   display:flex;
   justify-content:flex-start;
-  align-self: flex-start;
+  
   border: 5px solid lime;
   width: 70%;
   height: 40vh;
@@ -55,5 +55,5 @@
 
 .card{
   width:25%;
-  color:white;
+  
 }
