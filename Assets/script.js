@@ -8,7 +8,7 @@ const apiUrl = "https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={l
 
 async function checkWeather(city) {
     console.log(city,"city")
-    const cityUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`
+    const cityUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=Imperial`
   let response = await fetch(cityUrl);
   var data = await response.json();
   

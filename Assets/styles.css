@@ -1,29 +1,33 @@
 * {
   padding: 0;
   margin: 0;
+  background-color: lightsteelblue;
 }
 
 #title {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: lightblue;
+  margin-top: 2vh;
 }
 
 #dateTime {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: lightgray;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 
+/*img {
+  background-color: lightseagreen;
+}*/
 
 #wthrCont {
   display: flex;
   flex-direction:row;
   width: 100%;
-  height: 100vh;
-  border: 5px solid black;
+  height: 40vh;
   justify-content: space-around;
   
 }
@@ -31,29 +35,47 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  border: 5px solid lime;
   width: 20%;
 }
 
 #wthrCont #wthrRes {
   display:flex;
-  justify-content:flex-start;
-  
-  border: 5px solid lime;
+  justify-content:space-evenly;
   width: 70%;
   height: 40vh;
   padding-right: 20px;
-  color: lime;
+  color: black;
+}
+
+section {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 #wthrGrid {
-    border: 5px solid lime;
     display: flex;
     align-self: center;
-    width: 70%;
+    width: 100%;
+    flex-direction: column;
 }
 
 .card{
   width:25%;
-  
+  border: 1px solid black;
+  text-align: center;
+}
+
+.card h2, .card p {
+  font-weight: normal;
+  font-size: large;
+  background-color: cadetblue;
+}
+
+.card:hover {
+  border: 1px solid lime
+}
+
+ul#prevCity {
+  display: flex;
+  flex-direction: column;
 }
