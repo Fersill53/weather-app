@@ -38,6 +38,10 @@
   width: 20%;
 }
 
+button#srchBtn {
+  background-color: lightcoral;
+}
+
 #wthrCont #wthrRes {
   display:flex;
   justify-content:space-evenly;
@@ -78,4 +82,8 @@ section {
 ul#prevCity {
   display: flex;
   flex-direction: column;
+}
+
+ul#prevCity button {
+  background-color: lightseagreen;
 }

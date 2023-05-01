@@ -22,12 +22,27 @@ async function checkWeather(city) {
   pEl.text(`Temp: ${data.main.temp}`)
   var imgEl = $("<img>")
   imgEl.attr("src",`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
+  var pHum = $('<p>')
+  pHum.text(`humidty: ${data.main.humidity}`)
+  var pWin = $('<p>')
+  pWin.text(`wind: ${data.wind.speed}`)
   $("#wthrRes").html(h2El)
   $("#wthrRes").append(pEl)
   $("#wthrRes").append(imgEl)
+  $("#wthrRes").append(pHum)
+  $("#wthrRes").append(pWin)
 }
 
 $('#srchBtn').on('click', function(event) {
+    var city = $('#search').val()
+    checkWeather(city)
+    var dataLocal = JSON.parse(localStorage.getItem("weatherApp")) || []
+    dataLocal.push(city)
+    localStorage.setItem('weatherApp', JSON.stringify(dataLocal))
+    displaylocalStorage()
+})
+
+$('#prevCity').on('click', function(event) {
     var city = $('#search').val()
     checkWeather(city)
     var dataLocal = JSON.parse(localStorage.getItem("weatherApp")) || []
@@ -53,8 +68,11 @@ async function fiveDay(lat, lon) {
         pEl.text(`Temp: ${data.list[i].main.temp}`)
         var imgEl = $("<img>")
         imgEl.attr("src",`https://openweathermap.org/img/wn/${data.list[i].weather[0].icon}@2x.png`)
+        var pHum = $('<p>')
+        pHum.text(`humidity: ${data.list[i].main.humidity}`)
         divEl.append(h2El)
         divEl.append(pEl)
+        divEl.append(pHum)
         divEl.append(imgEl)
         htmlCode.append(divEl)
         console.log("i",i,divEl)
@@ -72,6 +90,8 @@ function displaylocalStorage(){
 
 }
 displaylocalStorage()
+
+
 //every time a cit name is typed, a button appears with city name that can be clicked again.
 
 //save info to local storage
