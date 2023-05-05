@@ -22,6 +22,6 @@ The purpose is to use our knowledge gained from the previous weeks and apply the
 Code created personally
 
 ## Deployment
-https://fersill53.github.io/bug-free-palm-tree/
+https://fersill53.github.io/weather-app/
 
 ![Weatherpic.png](https://github.com/Fersill53/weather-app/blob/main/Assets/Weatherpic.png)
