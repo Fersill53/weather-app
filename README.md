@@ -10,7 +10,7 @@ Through completeing this challenge we will be able to demonstrate how to build a
 The purpose is to use our knowledge gained from the previous weeks and apply them to a new project that involves using code that we have created to make the daily scheduler app by using our own framework with html and css, and making it interactive using javascript.
 - The motivation for this project is to be able to display the ability to follow instructions, implement, and display a working end product.
 - This project was created to simulate an on the job experience and deliver a working product for the share holder/employer.
-- This project solve issues related to being able to take a starter code and edit into a working product that can be deployed to the customer.
+- This project solve issues related to being able to use bootstrap and edit into a working product that can be deployed to the customer.
 - In this project I learned:
   - How to apply third party api to make it display the weather of a given city.
   - bootstrap for the outline and editing the page.
@@ -18,7 +18,8 @@ The purpose is to use our knowledge gained from the previous weeks and apply the
 
 
 ## Sources
-html and css framework provided by instructor. javascript written by me.
+
+Code created personally
 
 ## Deployment
 https://fersill53.github.io/bug-free-palm-tree/
