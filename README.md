@@ -23,4 +23,4 @@ html and css framework provided by instructor. javascript written by me.
 ## Deployment
 https://fersill53.github.io/bug-free-palm-tree/
 
-![schd.png](https://github.com/Fersill53/bug-free-palm-tree/blob/main/Assets/schd.png)
+![Weatherpic.png](https://github.com/Fersill53/weather-app/blob/main/Assets/Weatherpic.png)
